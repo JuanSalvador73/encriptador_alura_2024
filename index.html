@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Encriptador Alura 2024 -</title>
+    <linK rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container_main">
+
+        <!--Header-->
+        <div class="container_header">
+            <div class="logo">
+                <img id="img-logo" src="images/Logo@Transparent.png">
+                <!--<p>Va el logo</p>-->
+                <img>
+              </div>
+              <div class="legenda">
+                <p>Mensaje a Encriptar</p>
+              </div>
+        </div>
+
+        
+        
+        <!--Campos Texto Encriptado-->
+        <div class="container_body">
+            <div class="container_encriptador">
+                <div class="container_textarea--btn">
+                    <!--Campos de Texto-->
+                    <!--Campos Texto Normal-->
+                    <textarea class="container_textarea" id="campoTexto" placeholder="Escribe tu texto"></textarea>
+                    <div class="container_buttons">
+                        <button class="btn" onclick="EncriptarTexto()">Encriptar</button><br>
+                        <button class="btn" onclick="Desencriptar()">Desencriptar</button>
+                        <button class="btn" onclick="Borrar()">Borrar</button>
+                    </div>
+                </div>
+
+            </div>
+            
+            
+            <div class="container_desencriptador">
+                    <textarea class="container_textarea campo_desencriptador" id="campoTextoEncriptado" placeholder="Texto Encriptado"></textarea>
+            </div>
+
+
+
+        </div>
+        <!--Inicia Body Encriptador-->
+
+        <!--Footer-->
+        <footer class="container_footer">
+            <div>
+              <p>Desarrollado por Juan Salvador | &copy; ONE- Oracle Next Education - Alura Latam - 2024</p>
+            </div>
+          </footer>
+
+
+    </div>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

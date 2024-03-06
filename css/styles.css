@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    box-sizing: box;
+  
+}
+
+body{
+    height: 100%;
+    margin: 0;
+   
+    font-family: Arial, Helvetica, Sans-Serif;
+    background: linear-gradient(-35deg, rgb(135, 175, 239) 0%, rgb(234, 223, 249) 100%);
+      background-repeat: no-repeat;
+    background-attachment: fixed;
+   }
+
+/*Style General de todo el encriptador*/
+
+/*Todo el contenido del BODY esta en este envolvente*/
+.container_main{
+    margin-bottom:60px;
+    width:95%;
+    max-width:1250px;
+    margin: 0 auto;
+    /*border: 1px solid red;*/
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.8);
+-webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.8);
+-moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.8);
+  }
+
+  .container_header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    /*border: 1px solid violet;*/
+    
+  }
+
+  #img-logo{
+    margin-top:20px;
+    margin-bottom:15px;
+    width:85%;
+  }
+
+  .legenda{
+    font-family: 'Kanit', sans-serif;
+    color:#3E669D;
+    font-size:32px;
+    align-items: right;
+   /* border: 1px solid red;*/
+    margin-right:36px;
+  }
+
+  /*Contenedor de los campos de Texto*/
+  .container_body{
+    display:flex;
+    /*justify-content:space-around;*/
+    /*border: 1px dotted blue;*/
+    /*background-color: azure;*/
+  }
+
+  .container_encriptador{
+    display:flex;
+    flex-direction:column;
+    width:70%;
+    height:700px;
+    /*border:1px solid black;*/
+    background-color:#ffffff;
+  }
+
+  .container_textarea--btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*border: 1px solid rgb(19, 207, 66);*/
+  }
+
+  /*Style contenedor textarea*/
+.container_textarea{
+    /*margin-left:8px;
+    margin-right:8px;*/
+    margin-top:30px;
+  }
+
+  textarea{
+    margin-left: 15px;
+    margin-right: 15px;
+    height:550px;  
+    outline: none;
+    width: 90%; /*90%*/
+    resize: none;
+    color: #0A3871;
+    font-size: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    margin-bottom:20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /*
+    textarea .campo_desencriptador{
+    margin-left: 8px;
+    margin-right: 8px;
+    height:550px;  
+    outline: none;
+    width: 30%;
+    resize: none;
+    color: #0A3871;
+    font-size: 20px;
+    border: none;
+    background-color: #b12525;
+    margin-bottom:20px;
+  }
+  */
+
+
+
+  .container_desencriptador{
+    margin-left: 5px;
+    width:35%;
+    height:700px;
+    /*border:1px solid green;*/
+    text-align:center;
+    background-color: #ffffff;
+
+  }
+
+  .container_buttons{
+    margin-left: 6px;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+    /*border: 1px solid #ccc;*/
+
+  }
+
+  /*Style buttons*/
+.btn{
+  margin:5px;
+  background:#CCCCCC;
+  color:#FFFFFF;
+  border: 1px solid transparent;
+  border-radius:12px;
+  padding:8px 8px;
+  font-size:14px;
+  font-weight:bold;
+  width:180px;
+  transition: 400ms;
+  background: linear-gradient(180deg, rgba(212,226,233,1) 0%, rgba(113,147,167,1) 23%, rgb(12, 44, 46) 72%, rgba(5,54,79,1) 72%);
+}
+
+.btn:hover{
+  color:#01202f;
+  background: linear-gradient(180deg, rgba(234,243,247,1) 0%, rgba(148,247,235,1) 23%, rgba(101,185,228,1) 99%);
+}
+
+  .container_footer{
+    background-color: #000000;
+    border: 1px solid #ffffff;
+  }
+
+  .container_footer p{
+    color: #FFF;
+    font-size: 13px;
+    margin-top:25px;
+    margin-bottom:20px;
+    text-align:center;
+  }
+
+
+  /*----------------------Style Media Querie----------------------*/
+
+  @media(max-width: 393px){
+
+
+  }
+
+  @media(max-width: 768px){
+
+    .container_header{
+      flex-direction: column;
+    }
+
+    #img-logo{
+      margin-top:8px;
+      margin-bottom:8px;
+      width:100%;
+    }
+
+    .legenda{
+      font-size:28px;
+      align-items: center;
+     /* border: 1px solid red;*/
+      margin:0;
+    }
+
+    .container_body{
+      flex-direction: column;
+      /*justify-content:space-around;*/
+      /*border: 1px dotted blue;*/
+      /*background-color: azure;*/
+    }
+
+    .container_encriptador{
+      flex-direction:column;
+      width:100%;
+      height:500px;
+      /*border:1px solid black;*/
+      /*background-color:#ffffff;*/
+    }
+
+      textarea{
+        margin: 0 0 8 0;
+        height: 400px;
+        /*margin-bottom: 8px;*/
+      }
+
+    .container_desencriptador{
+      margin: 0;
+      flex-direction:column;
+      width:100%;
+      height:480px;
+      /*border:1px solid black;*/
+      /*background-color:#680a54;*/
+    }
+
+  }
+
+  @media(min-width: 800px){
+
+    .container_body{
+      flex-direction: column;
+    }
+
+
+    .container_encriptador{
+      flex-direction:column;
+      width:100%;
+      height:600px;
+      /*border:1px solid black;*/
+      /*background-color:#975170;*/
+    }
+
+      textarea{
+        margin: 0 0 8 0;
+        height: 500px;
+        /*margin-bottom: 8px;*/
+      }
+
+    .container_desencriptador{
+      margin: 0;
+      flex-direction:column;
+      width:100%;
+      height:580px;
+      /*border:1px solid black;*/
+      /*background-color:#3b8c59;*/
+    }
+  }
+
+  @media(min-width: 1280px){
+
+    .container_body{
+      flex-direction: row;
+    }
+  }
